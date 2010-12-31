@@ -1,0 +1,18 @@
+--- apertium-cy-en-0.1.0/Makefile.am.orig	2008-08-01 18:42:09.000000000 +0200
++++ apertium-cy-en-0.1.0/Makefile.am	2010-12-31 12:28:36.058125288 +0100
+@@ -145,10 +145,10 @@
+ 
+ install-data-local:
+ 	apertium-gen-modes modes.xml apertium-$(PREFIX1)
+-	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_cy_modesdir)
+-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x $(apertium_cy_endir)
+-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x $(apertium_cy_endir)
+-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(apertium_cy_endir)
+-	$(INSTALL_DATA) $(BASENAME).pre-$(LANG1).t1x $(apertium_cy_endir)
++	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_cy_modesdir)
++	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x $(DESTDIR)$(apertium_cy_endir)
++	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x $(DESTDIR)$(apertium_cy_endir)
++	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(DESTDIR)$(apertium_cy_endir)
++	$(INSTALL_DATA) $(BASENAME).pre-$(LANG1).t1x $(DESTDIR)$(apertium_cy_endir)
+ 
+ CLEANFILES = -rf $(TARGETS_COMMON) modes
