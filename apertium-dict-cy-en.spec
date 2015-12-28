@@ -2,12 +2,12 @@ Summary:	Welsh-English language pair for Apertium
 Summary(pl.UTF-8):	Para języków walijski-angielski dla Apertium
 %define	lpair	cy-en
 Name:		apertium-dict-%{lpair}
-Version:	0.1.0
+Version:	0.1.1
 Release:	1
 License:	GPL v2+
 Group:		Applications/Text
 Source0:	http://downloads.sourceforge.net/apertium/apertium-%{lpair}-%{version}.tar.gz
-# Source0-md5:	7067869350719ba2347e0a52d0143938
+# Source0-md5:	c2b9701e1e6a99a4ff5a2f8006e68c6d
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-apertium32.patch
 URL:		http://www.apertium.org/
